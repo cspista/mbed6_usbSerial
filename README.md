@@ -36,7 +36,7 @@ by using an USB cable and an USB socket breakout card.
 * Start with an empty mbed 6 project
 * Edit the main.cpp source file
 * Configure the project by adding an **mbed_app.json** file in which
-    * We have to configure **usb_speedE** parameter
+    * We have to configure **usb_speed** parameter
     * We have to add **USBDEVICE** to the device list of the target
 
 Finally the **mbed_app.json** sholuld look like this: 
@@ -57,8 +57,9 @@ Finally the **mbed_app.json** sholuld look like this:
 }
 ```
 ## mbed6_usbSerial results
-Open a terminal window on the PC which the ST-Link v2-1 is connected to. 
-The default baudrate is 9600 bps. After (re)starting the program type in something
+Open a terminal window for the new virtual serial port on the PC which the target USB is connected to. 
+The baudrate setting has no effect for the USB transfer, so the default values is good as well. 
+After (re)starting the program type in something
 then you should see something similar to the following output:
 
 ![](./images/mbed6_usbSerial.png)
